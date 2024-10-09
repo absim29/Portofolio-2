@@ -30,7 +30,7 @@ function HomePage() {
             <Typewriter
               options={{
                 strings: [
-                  "Creative Designer", // First title
+                  "Web Designer", // First title
                   "Front-End Developer", // Second title
                   "From Cake Design to Web Design", // Additional title
                 ],
