@@ -1,22 +1,16 @@
 import React from 'react';
 import './App.css';
-import SiteCard from './components/SiteCard';
-import sites from './components/Data';
+import "bootstrap/dist/css/bootstrap.min.css";
+import { AnimatePresence } from "framer-motion";
+import HomePage from './components/HomePage';
 
 function App() {
   return (
-    <div>
-      {sites.map((site, index) => (
-        <SiteCard
-          key={index}
-          title={site.title}
-          description={site.description}
-          image={site.image}
-          demoLink={site.demoLink}
-          githubLink={site.githubLink}
-        />
-      ))}
-    </div>
+    <>
+      <AnimatePresence mode="wait">
+        <HomePage />
+      </AnimatePresence>
+    </>
   );
 }
 
